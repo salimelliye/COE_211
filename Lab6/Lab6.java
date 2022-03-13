@@ -5,7 +5,7 @@ public class Lab6 {
   public static void main(String[] args){
     Boolean b1 = true;
 
-    while(b1 == true ){ //Bonus
+    while(b1 == true ){ //Bonus 1
       System.out.println("Which service would you like to use?");
       System.out.println("[1]: Basic week visualizer");
       System.out.println("[2]: Advanced week visualizer");
@@ -17,38 +17,35 @@ public class Lab6 {
       int numberOfService = input.nextInt();
 
       BasicDays basic = new BasicDays();
+      AdvancedDays advanced = new AdvancedDays();
+      BasicCalc calc = new BasicCalc();
+      Employee emp = new Employee();
+      Bonus2 tryi = new Bonus2();
 
-      if(numberOfService == 1){
+
+      if (numberOfService == 1){
 
       basic.weekDaysAre();
 
-      }
-
-      AdvancedDays advanced = new AdvancedDays();
-
-      if(numberOfService == 2){
+      } else if (numberOfService == 2){
 
       advanced.AdvancedDaysAre();
 
-      }
-
-      BasicCalc calc = new BasicCalc();
-
-      if(numberOfService == 3){
+      } else if (numberOfService == 3){
 
       calc.Calculate();
 
-      }
-
-      Employee emp = new Employee();
-
-      if(numberOfService == 4){
+      } else if (numberOfService == 4){
 
       emp.employeeInfo();
 
+      } else{
+
+       System.out.println("Please make sure you pick a number between 1 and 4");  //Bonus 2
+       tryi.boonus2();
       }
 
-//Bonus
+//Bonus 1
       System.out.print("Would you like to perform another operation? [y/n]: ");
       char answer = input.next().charAt(0);
       if (answer == 'y' ){

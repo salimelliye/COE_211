@@ -15,7 +15,7 @@ public BasicDays(){
 
 public void weekDaysAre(){
 
-System.out.println("The basic days are" + day_1 + " " + day_2 + " " + day_3 + " " +
+System.out.println("The basic days are:" + "" + day_1 + " " + day_2 + " " + day_3 + " " +
 day_4 + " " + day_5 + " " + day_6  + " " + day_7);
 
 }
